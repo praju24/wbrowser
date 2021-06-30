@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints="Search or type web address"
+    android:background="#F8F8F8"
+    android:backgroundTint="#F4F8D2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:autofillHints="Search or type web address"
+        android:ems="10"
+        android:hint="Search or type web address"
+        android:inputType="textPersonName"
+        android:textColor="#0E0E0E"
+        android:textColorHighlight="#0E0E0E"
+        android:textColorHint="#0E0E0E"
+        android:textColorLink="#0C0C0C"
+        app:layout_constraintEnd_toStartOf="@+id/btnGo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/mywebview"
+        android:layout_width="360dp"
+        android:layout_height="595dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl" />
+
+    <ImageView
+        android:id="@+id/btnfacebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnwhatapp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/btnwhatapp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/btnfacebook"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <ImageView
+        android:id="@+id/btntwitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/btnwhatapp"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/btnyoutube"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/btntwitter"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/btninstagram"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/btnyoutube"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl"
+        app:srcCompat="@drawable/instagram" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
